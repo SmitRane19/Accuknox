@@ -17,10 +17,6 @@ This repository explores how Django signals behave with respect to:
 - The view does not return until the signal finishes its 5-second `sleep`.
 - The delay is visible in the browser response time.
 
-📸 *Screenshot showing delay:*
-
-![Signal Synchronous Delay](screenshots/synchronous_delay.png)
-
 ---
 
 ## ✅ Q2: Do Django signals run in the same thread?
@@ -31,9 +27,6 @@ This repository explores how Django signals behave with respect to:
 - `threading.get_ident()` inside the view and signal show the same thread ID.
 - This confirms both run in the same thread.
 
-📸 *Screenshot showing thread ID match:*
-
-![Same Thread ID](screenshots/thread_id_match.png)
 
 ---
 
